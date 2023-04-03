@@ -1,19 +1,15 @@
 #include <stdio.h>
 /**
-*main - Entry point of function main
+*main - Prints the alphabet in lowercase
 *Description:
 *Return: Always 0 (Success)
 */
 int main(void)
 {
-       char alphabet = 'a';
-       char letter = 'z';
-       
-       while (alphabet <= z)
-       {
-	 putchar(alphabet);
-	 alphabet++;
-       }
-       putchar('\n');
-       return (0);
+  char alphabet;
+              
+  for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+       putchar(alphabet);
+  putchar('\n');
+  return (0);
 }
