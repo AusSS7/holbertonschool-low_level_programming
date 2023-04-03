@@ -8,16 +8,15 @@ int main(void)
 {
 char letter_lower;
 
- while (letter_lower <= 'z')
-   {
-   if (letter_lower == 'e')
-     {
-       continue;
-       //putchar(letter_lower);
-     }
-   putchar(letter_lower);
-   letter_lower++;
-   }
- putchar('\n');
- return (0);
+while (letter_lower <= 'z')
+{
+if (letter_lower == 'e')
+{
+continue;
+}
+putchar(letter_lower);
+letter_lower++;
+}
+putchar('\n');
+return (0);
 }
