@@ -14,17 +14,17 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	  {
-	    last_digit = n % 10
+	    last_digit = n % 10;
 	      printf("Last digit of %d is %d\n", n,last_digit);
 	  }
 	else if (n == 0)
 	  {
-	    last_digit = n % 10
+	    last_digit = n % 10;
 	      printf("Last digit of %d is %d", n,last_digit);
 	  }
 	else if (n < 0)
 	  {
-	    last_digit = n % 10
+	    last_digit = n % 10;
 	    printf("Last digit of %d is -%d", n,last_digit);
 	  }
 	return (0);
