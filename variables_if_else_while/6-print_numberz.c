@@ -6,13 +6,12 @@
 */
 int main(void)
 {
-  char num_char[]={'0','1','2','3','4','5','6','7','8','9'};
-  int x;
-  
-  for (x = 0 ; x <= 10; x++)
-{
-  putchar(num_char[x]);
-}
+int num_char;
 
+ for (num_char = 0 ; num_char < 10; num_char++)
+{
+putchar(num_char);
+}
+ putchar('\n');
 return (0);
 }
