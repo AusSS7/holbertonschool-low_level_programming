@@ -7,8 +7,8 @@
 int main(void)
 {
 char *p;
-     
-p="0123456789abcdef";
+
+p = "0123456789abcdef";
 while (*p != 0)
 {
 putchar(*p);
