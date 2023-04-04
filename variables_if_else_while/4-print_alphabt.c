@@ -6,16 +6,16 @@
 */
 int main(void)
 {
-char letter_lower;
-
-while (letter_lower <= 'z')
+  char letter_lower;
+ 
+ for (letter_lower = 'a'; letter_lower <= 'z'; letter_lower++)
 {
 if (letter_lower == 'e')
 {
 continue;
 }
 putchar(letter_lower);
-letter_lower++;
+
 }
 putchar('\n');
 return (0);
