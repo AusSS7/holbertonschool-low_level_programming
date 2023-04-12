@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
+* times_table - Prints the 9 times table, starting with 0
 *
-*
-*
+* Return: empty output
 */
 
 void times_table(void)
 {
-  int col, row, a, b, c, d, u;
-  row = 9;
-  col = 9;
- 
+int col, row, a, b, c, d, u;
+row = 9;
+col = 9;
+
 for (a = 0; a <= row; a++)
 {
 for (b = 0; b <= col; b++)
