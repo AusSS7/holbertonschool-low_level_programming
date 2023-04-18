@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
 *puts2 - 
@@ -12,10 +13,13 @@ void puts2(char *str)
   int a;
   for (a = 0; str[a] != '\0'; a++)
     {
-      if (str[a] % 2 == 0)
-	{
-	  printf("%s", str[a]);
-	}
+
+  if (a % 2 == 0)
+    {
+            
+printf("%c", str[a]);
+
+ }
     }
-  printf("\n");
+printf("\n");
 }
