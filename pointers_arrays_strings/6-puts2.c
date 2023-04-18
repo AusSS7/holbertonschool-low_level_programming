@@ -14,7 +14,7 @@ void puts2(char *str)
     {
       if (str[a] % 2 == 0)
 	{
-	  printf("%d", a);
+	  printf("%s", str[a]);
 	}
     }
   printf("\n");
