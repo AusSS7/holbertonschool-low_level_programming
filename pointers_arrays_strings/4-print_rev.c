@@ -26,6 +26,5 @@ for (i = 0; i < count; i++)
 rev[i] = s[b];
 b--;
 }
-printf("%s", rev);
-printf("\n");
+printf("%s\n", rev);
 }
