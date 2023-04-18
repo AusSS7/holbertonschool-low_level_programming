@@ -9,8 +9,6 @@
 int _strlen(char *s)
 {
 int a;
-
-s = "My first strlen!";
  
 for (a = 0; s[a] != '\0'; a++)
 {
