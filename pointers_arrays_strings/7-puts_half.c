@@ -18,10 +18,10 @@ for (b = 0; b <= s; b++)
 {
 if (b % 2 == 0)
 {
-if (b >= c)
+if (b > c)
 printf("%c", str[b]);
 }
-else
+ else if (b % 2 != 0)
 {
 if (b >= a)
 printf("%c", str[b]);
