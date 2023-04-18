@@ -17,14 +17,15 @@ char rev[1000];
 count = 0;
 
 while (s[count] != '\0')
-{
+
 count++;
-}
+
 b = count - 1;
 for (i = 0; i < count; i++)
 {
 rev[i] = s[b];
 b--;
 }
+rev[i] = '\0';
 printf("%s\n", rev);
 }
