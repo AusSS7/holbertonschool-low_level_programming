@@ -15,11 +15,11 @@ s = strlen(str);
 a = (s / 2) + 1;
 
 for (b = 0; b <= s; b++)
+
+if (b >= a)
 {
-  if (b >= a)
-    {
-  printf("%c", str[b]);
-    }
+printf("%c", str[b]);
+
 }
- printf("\n");
+printf("\n");
 }
