@@ -21,17 +21,17 @@ if (b % 2 == 0)
 {
 if (b > c)
 {
-printf("%c", str[b]);
+_putchar(*(str + b));
 }
 }
 else
 {
 if (b > a)
 {
-printf("%c", str[b]);
+_putchar(*(str + b));
 }
 }
 b++;
 }
-printf("\n");
+_putchar('\n');
 }
