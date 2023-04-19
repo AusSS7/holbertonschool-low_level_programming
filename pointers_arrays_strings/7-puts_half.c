@@ -19,12 +19,16 @@ for (b = 0; b <= s; b++)
 if (b % 2 == 0)
 {
 if (b > c)
+{
 printf("%c", str[b]);
 }
- else if (b % 2 != 0)
+}
+else if (b % 2 != 0)
 {
-if (b >= a)
+if (b > a)
+{
 printf("%c", str[b]);
+}
 }
 }
 printf("\n");
