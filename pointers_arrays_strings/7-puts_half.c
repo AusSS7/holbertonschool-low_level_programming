@@ -33,5 +33,5 @@ printf("%c", str[b]);
 }
 b++;
 }
-printf("\n");
+
 }
