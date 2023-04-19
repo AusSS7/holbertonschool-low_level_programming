@@ -19,14 +19,14 @@ while (b <= s)
 {
 if (b % 2 == 0)
 {
-if (b >= c)
+if (b > c)
 {
 printf("%c", str[b]);
 }
 }
 else
 {
-if (b >= a)
+if (b > a)
 {
 printf("%c", str[b]);
 }
