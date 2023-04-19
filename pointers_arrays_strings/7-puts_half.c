@@ -15,7 +15,7 @@ s = strlen(str);
 a = (s - 1) / 2;
 c = s / 2;
 b = 0;
-while (b <= s)
+while (b < s)
 {
 if (b % 2 == 0)
 {
