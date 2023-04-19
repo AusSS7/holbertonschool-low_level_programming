@@ -10,26 +10,28 @@
 
 void puts_half(char *str)
 {
-  int a, b, c, s;
+int a, b, c, s;
 s = strlen(str);
 a = (s - 1) / 2;
 c = s / 2;
-for (b = 0; b <= s; b++)
+b = 0;
+while (b <= s)
 {
 if (b % 2 == 0)
 {
-if (b > c)
+if (b >= c)
 {
 printf("%c", str[b]);
 }
 }
-else if (b % 2 != 0)
+else
 {
-if (b > a)
+if (b >= a)
 {
 printf("%c", str[b]);
 }
 }
+b++;
 }
 printf("\n");
 }
