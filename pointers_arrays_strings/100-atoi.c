@@ -22,14 +22,14 @@ int _atoi(char *s)
 	a = 1;
 	num = 0;
 
-	for(i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		while (('-' == s[i]) || (s[i] == '+'))
 		{
 			if (s[i] == '-')
-				a = a * -1;
+			a = a * -1;
 			s++;
-	       	}
+		}
 		if (status == 1)
 		{
 			break;
