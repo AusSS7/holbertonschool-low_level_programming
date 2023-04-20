@@ -14,7 +14,7 @@
 int _atoi(char *s)
 {
 	int i;
-	int num;
+	int64_t num;
 	int a;
 	int status;
 
