@@ -20,21 +20,15 @@ int _atoi(char *s)
 	status = 0;
 	a = 1;
 	num = 0;
-	while (('-' == (*s)) || ((*s) == '+'))
-	{
-		if (*s == '-')
-       		{
-            		a = a * -1;
-            		s++;
-        	}
-       		else if (*s == '+')
-        	{
-            		a = a * -1;
-            		s++;
-        	}
-	}
+
 	for(i = 0; s[i] != '\0'; i++)
 	{
+		while (('-' == s[i]) || (s[i] == '+'))
+		{
+			if (s[i] == '-')
+				a = a * -1;
+			s++;
+	       	}
 		if (status == 1)
 		{
 			break;
