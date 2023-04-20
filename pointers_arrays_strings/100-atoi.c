@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <limits.h>
 
 /**
 *_atoi - convert a string to an integer
@@ -13,7 +14,7 @@
 int _atoi(char *s)
 {
 	int i;
-	long int num;
+	int num;
 	int a;
 	int status;
 
