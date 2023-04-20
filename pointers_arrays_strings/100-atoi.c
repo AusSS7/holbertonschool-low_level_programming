@@ -22,34 +22,35 @@ int _atoi(char *s)
 	num = 0;
 	while (('-' == (*s)) || ((*s) == '+'))
 	{
-        if (*s == '-')
-        {
-            a = a * -1;
-            s++;
-        }
-        else if (*s == '+')
-        {
-            a = a * -1;
-            s++;
-        }
-     }
-   	for(i=0;s[i]!='\0';i++)
+		if (*s == '-')
+       		{
+            		a = a * -1;
+            		s++;
+        	}
+       		else if (*s == '+')
+        	{
+            		a = a * -1;
+            		s++;
+        	}
+	}
+	for(i = 0; s[i] != '\0'; i++)
 	{
-		if (status==1){break;}
-		while(isdigit(s[i])){
-
+		if (status == 1)
+		{
+			break;
+		}
+		while (isdigit(s[i]))
+		{
 			if (s[i] >= 48 && s[i] <= 57)
 			{
-			    num = num * 10 + (s[i] - 48);
-
+				num = num * 10 + (s[i] - 48);
 			}
-			if(isdigit(s[i+1])){
+			if (isdigit(s[i + 1]))
+			{
 				status = 1;
 			}
-
-			i++;
+		i++;
 		}
-
 	}
-return (num * a);
+	return (num * a);
 }
