@@ -13,7 +13,7 @@
 int _atoi(char *s)
 {
 	int i;
-	int num;
+	long int num;
 	int a;
 	int status;
 
@@ -38,6 +38,7 @@ int _atoi(char *s)
 			if (s[i] >= 48 && s[i] <= 57)
 			{
 				num = num * 10 + (s[i] - 48);
+				/*return (num);*/
 			}
 			if (isdigit(s[i + 1]))
 			{
