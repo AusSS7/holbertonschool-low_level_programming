@@ -1,0 +1,21 @@
+#include <string.h>
+#include <stdlib.h>
+
+/**
+* *_strncpy - copies a string
+* @dest: string 1 value
+* @src: string 2 value
+* @n: bytes from src
+* Return: dest
+*/
+
+char *_strncpy(char *dest, char *src, int n)
+{
+	int a;
+
+	for (a = 0; a < n && src[a] != '\0'; a++)
+		dest[a] = src[a];
+	for (; a < n; a++)
+		dest[a] = '\0';
+	return (dest);
+}
