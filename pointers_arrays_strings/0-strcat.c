@@ -4,8 +4,8 @@
 
 /**
 * *_strcat - concatenates two strings
-*@dest:
-*@src:
+*@dest: copied or destination string
+*@src: source string
 *Return: dest value
 */
 
@@ -16,7 +16,6 @@ char *_strcat(char *dest, char *src)
 	dest_len = strlen(dest);
 	for (a = 0; src[a] != '\0'; a++)
 		dest[dest_len + a] = src[a];
-       	dest[dest_len + a] = '\0';
-
+	dest[dest_len + a] = '\0';
 	return (dest);
 }
