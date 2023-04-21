@@ -10,12 +10,18 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int result;
+	int a;
 
-	result = strcmp(s1, s2);
-	if (result == 0)
+	a = 0;
+	while (s1[a] == s2[a])
+	{
+       		if (s1[a] == '\0' || s2[a] == '\0')
+			break;
+		a++;
+	}
+	if (s1[a] == '\0' && s2[a] == '\0')
 		return (0);
 	else
-		return (result);
+		return (-1);
 
 }
