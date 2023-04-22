@@ -9,19 +9,26 @@
 
 char *cap_string(char *str)
 {
-	int a;
+	int i;
 
-	if (str[0] >= 97 && str[0] <= 122)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		str[0] = str[0] - 32;
-	}
-	for (a = 0; str[a] != '\0'; a++)
-	{
-		if (str[a - 1] == 32)
+		if (str[0] >= 97 && str[0] <= 122)
 		{
-			if (str[a] >= 97 && str[a] <= 122)
+			str[0] = str[0] - 32;
+		}
+		else if (str[i - 1] == ' ')
+		{
+			if (str[i] >= 97 && str[i] <= 122)
 			{
-				str[a] = str[a] - 32;
+				str[i] = str[i] - 32;
+			}
+		}
+		else if (str[i - 1] >= 9 && str[i - 1] <= 10)
+		{
+			if (str[i] >= 97 && str[i] <= 122)
+			{
+				str[i] = str[i] - 32;
 			}
 		}
 	}
