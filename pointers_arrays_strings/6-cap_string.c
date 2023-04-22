@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
 * *cap_string - capitalizes all words of a string
 * @str: point variable string
@@ -11,26 +11,19 @@ char *cap_string(char *str)
 {
 	int a;
 
+	if (str[0] >= 97 && str[0] <= 122)
+	{
+		str[0] = str[0] - 32;
+	}
 	for (a = 0; str[a] != '\0'; a++)
 	{
-		if (a == 0)
+		if (str[a - 1] == 32)
 		{
 			if (str[a] >= 97 && str[a] <= 122)
+			{
 				str[a] = str[a] - 32;
-			continue;
-		}
-		if (str[a] == ' ')
-		{
-			a++;
-			if (str[a] >= 97 && str[a] <= 122)
-				str[a] = str[a] - 32;
-			continue;
-		}
-		else
-		{
-			if (str[a] >= 65 && str[a] <= 90)
-				str[a] = str[a] + 32;
+			}
 		}
 	}
-	return (0);
+	return (str);
 }
