@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* recurse - find square root
+* _sqrt - find square root
 * @n: number to find square root of
 * @i: number of iterations
 * Return: square root or -1 if not found
