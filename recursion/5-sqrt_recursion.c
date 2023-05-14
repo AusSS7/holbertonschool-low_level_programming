@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include "main.h"
+#include "mai.h"
 
 /**
-*
-*
-*
+* recurse - find square root
+* @n: number to find square root of
+* @i: number of iterations
+* Return: square root or -1 if not found
 */
 
 int _sqrt(int n, int i)
@@ -21,9 +22,9 @@ int _sqrt(int n, int i)
 }
 
 /**
-*
-*
-*
+* _sqrt_recursion - compute square root
+* @n: number to square root
+* Return: square root of n
 */
 
 int _sqrt_recursion(int n)
