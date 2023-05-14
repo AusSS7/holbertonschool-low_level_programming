@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "mai.h"
+#include "main.h"
 
 /**
 * recurse - find square root
