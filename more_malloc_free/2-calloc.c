@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	nmemb *= size;
-	printf("%d\n", nmemb);
+	/*printf("%d\n", nmemb);*/
 	while (nmemb--)
 		p[nmemb] = 0;
 	return ((void *)p);
