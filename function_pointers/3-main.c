@@ -4,9 +4,10 @@
 
 
 /**
-*
-*
-*
+* main - compute math operation
+* @argc: number of argument in argv
+* @argv: arguments containing 2 numbers and operator
+* Return: Success (0), Error(98)
 */
 
 int main(int argc, char *argv[])

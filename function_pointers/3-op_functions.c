@@ -1,5 +1,5 @@
 /**
-0;136;0c* op_add - compute som of 2 integers
+* op_add - compute som of 2 integers
 * @a: first integer to add
 * @b: second integer to add
 * Return: sum of a and b
